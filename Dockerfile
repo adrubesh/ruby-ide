@@ -1,7 +1,8 @@
 ARG RUBY_VERSION=latest
-LABEL org.opencontainers.image.source = "https://github.com/adrubesh/ruby-ide"
+
 
 FROM ruby:${RUBY_VERSION}
+LABEL org.opencontainers.image.source = "https://github.com/adrubesh/ruby-ide"
 ARG NODE_VERSION=12.22.0
 
 RUN apt-get update \
